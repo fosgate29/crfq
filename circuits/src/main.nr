@@ -37,6 +37,8 @@ fn test_main() {
     main(1, 2, 3, 1);
     main(4, 2, 5, 2);
     main(34, 33, 21, 21);
+    main(50, 50, 50, 50);
+    main(250, 50, 50, 50);
     // Uncomment to make test fail
     //  main(4, 3, 1, 0); // quote cant be 0
     //  main(4, 3, 1, 3); // quote cant be bigger than one of the  inputs
