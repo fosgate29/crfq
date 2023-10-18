@@ -1,3 +1,6 @@
+target/
+proofs/
+
 # Logs
 logs
 *.log
