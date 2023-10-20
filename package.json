@@ -1,0 +1,11 @@
+{
+  "name": "crfq",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "5.7.0"
+  }
+}
