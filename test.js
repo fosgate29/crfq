@@ -4,7 +4,15 @@ async function main() {
   // hardhat wallet 0
   const sender = new ethers.Wallet('ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80');
 
-  let message = 1; // byte 1
+  const value = 1;
+
+  // Create an array with 31 zeros and one 1 at the end
+  const byteArray = Array.from({ length: 31 }, () => 0);
+  byteArray.push(value);
+
+  console.log(byteArray);
+  let message = byteArray;
+
   message = ethers.utils.keccak256(message);
 
   console.log('\x1b[34m%s\x1b[0m', 'signing message 🖋: ', message);
