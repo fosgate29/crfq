@@ -5,7 +5,18 @@
   "repository": "",
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
+    "@noir-lang/backend_barretenberg": "^0.17.0",
+    "@noir-lang/noir_js": "^0.17.0",
     "ethers": "5.7.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.5.0",
+    "vite": "^4.5.0"
   }
 }

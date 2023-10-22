@@ -30,9 +30,9 @@ fn main(
   // quote1, quote2 and quote3 were u32 type. And since we used ethers to sign messages,
   // it added prefix \x19Ethereum Signed Message:\n32 and we couldn't get the same hash ethers were generating
   // compared with the hash the circuit generated.
-  ecrecover::ecrecover(pub_key_x_1, pub_key_y_1, signature_1, hashed_message_quote1);
-  ecrecover::ecrecover(pub_key_x_2, pub_key_y_2, signature_2, hashed_message_quote2);
-  ecrecover::ecrecover(pub_key_x_3, pub_key_y_3, signature_3, hashed_message_quote3);
+  let address1 = ecrecover::ecrecover(pub_key_x_1, pub_key_y_1, signature_1, hashed_message_quote1);
+  let address2 = ecrecover::ecrecover(pub_key_x_2, pub_key_y_2, signature_2, hashed_message_quote2);
+  let address3 = ecrecover::ecrecover(pub_key_x_3, pub_key_y_3, signature_3, hashed_message_quote3);
 
   // Quotes must be greater than zero
   assert(quote1 > 0);
